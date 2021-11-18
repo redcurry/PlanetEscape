@@ -12,7 +12,9 @@ public class Gun : MonoBehaviour
         {
             var target = hitInfo.transform.parent.gameObject;
             if (target.layer == 7)  // Enemy layer
+            {
                 Destroy(target);
+            }
         }
     }
 }

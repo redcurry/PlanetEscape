@@ -16,6 +16,7 @@ public class Seek : MonoBehaviour
 
     private void Update()
     {
-        navMeshAgent.destination = target.position;
+        if (target != null)
+            navMeshAgent.SetDestination(target.position);
     }
 }
